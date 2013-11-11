@@ -1,0 +1,1 @@
+;cookbook.Models.Recipe = Backbone.Model.extend();

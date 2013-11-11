@@ -1,0 +1,46 @@
+script(id='recipeViewState',type='text/template')
+  | <div class='rcp-itm' data-id='<%= id %>'>
+  |   <h3 class='rcp-tl'><%= title %></h3>
+  |   <p class='rcp-dt'><%= getTime() %></p>
+  |   <p class='rcp-dsc'><%= description %></p>
+  |   <p class="rcp-btns">
+  |     <button class='rcp-btn-vw rcp-btn'>view</button>
+  |     <button class='rcp-btn-edt rcp-btn'>edit</button>
+  |   </p>
+  | </div>
+
+script(id='recipeEditState',type='text/template')
+  | <div class='rcp-itm'>
+  |   <h3 class='rcp-tl'><%= title %></h3>
+  |   <p class='rcp-dt'><%= getTime() %></p>
+  |   <p class='rcp-lb'>update recipe description</p>
+  |   <p class='rcp-dsc'><textarea name='description' placeholder="description"><%= description %></textarea></p>
+  |   <p class="rcp-btns">
+  |     <span class='rcp-err-msg'></span>
+  |     <button class='rcp-btn-sv rcp-btn'>save</button>
+  |     <button class='rcp-btn-cnl rcp-btn'>cancel</button>  
+  |   </p>
+  | </div>
+
+script(id='recipeNewState',type='text/template')
+  | <div class='rcp-itm'>
+  |   <p class='rcp-lb'>add new recipe</p>
+  |   <p class='rcp-dsc'><input name='title' placeholder="title"></p>
+  |   <p class='rcp-dsc'><textarea name='description' placeholder="description"></textarea></p>
+  |   <p class="rcp-btns">
+  |     <span class='rcp-err-msg'></span>
+  |     <button class='rcp-btn-sv rcp-btn'>save</button>
+  |     <button class='rcp-btn-cnl rcp-btn'>cancel</button>  
+  |   </p>
+  | </div>
+
+script(id="appLayout-tmpl",type="text/template")
+  | <section class='vvprt'>
+  |   <header class='pg-hd'>
+  |     <h1 class='pg-hd-tl'><a href="">Cookbook</a></h1>
+  |     <p class="rcp-btns"><button class='nw-rcp-btn'>+</button></p>
+  |   </header>
+  |	  <article class='pg-cnt'></article>
+  | </section>
+
+

@@ -1,0 +1,206 @@
+// reset
+html, body {
+	border: 0;
+	font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+  height: 100%;  
+}
+ 
+div, span, object, iframe, img, table, caption, thead, tbody,
+tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu,
+nav, footer, header, section, summary, mark, audio, video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+ 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+ol, ul, li, fieldset, legend, label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+ 
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+ 
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  caption, th, td {
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+ 
+a img {
+  border: 0;
+}
+ 
+:focus {
+  outline: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// cookbook v 1.0
+
+.cookbook {
+  background-image: url('/i/wood_tx.png');
+  min-height: 100%;
+  
+  .vvprt {
+    max-width: 640px;
+    margin: auto;
+  }
+  
+  .pg-hd {
+    padding: 0 1em;
+    font-family: 'Engagement', cursive;
+    .pg-hd-tl {
+      font-size: 4em;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: #6B5144;
+        color: rgba(104,45,11,0.8);
+        text-shadow: 1px 1px #eee, -1px -1px #333;
+      }
+    }
+    .rcp-btns {
+      margin-top: -4em;
+      text-align: right;
+      .nw-rcp-btn {
+        border: 1px solid #777;
+        color: #000;
+        font-size: 1.8em;
+        padding: 0 0.3em;
+        cursor: pointer;
+        font-weight: 900;
+        
+        &:hover {
+          color: #fff;
+          background-color: #777;
+        }
+      }      
+    }    
+  }
+
+  .pg-cnt {
+    padding: 1em;
+    .rcp-itm {
+      font-family: Arial, Helvetica, sans-serif,"Arial", sans-serif;
+      background: #ffffff;
+      padding: 1em 1.5em;
+      margin: 0.7em 0;
+      box-shadow: 0px 0px 5px 0px #A24A18;
+      display: inline-block;
+      width: 100%;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      
+      .rcp-tl {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
+      }
+
+      .rcp-lb {
+        text-transform: uppercase;
+        margin-top: 1em;
+      }
+
+      .rcp-dt {        
+        font-style: normal;
+        font-size: 0.7em;
+        line-height: 1em;
+        color: #79797a;
+      }
+
+      .rcp-dsc {
+        color: #4C4C4C;
+        line-height: 1.6em;
+        font-size: 0.9em;
+        margin-top: 0.5em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
+        textarea {
+          min-height: 10em;
+        }
+
+        textarea, 
+        input {
+          width: 100%;
+          max-width: 100%;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 0.5em;
+        }
+      }
+
+      .rcp-btns {
+        margin-top: 0.3em;
+        text-align: right;
+        .rcp-err-msg {
+          font-size: 0.8em;
+          color: rgb(250,0,0);
+        }
+        .rcp-btn {
+          text-transform: uppercase;
+          text-decoration: none;
+          border: solid 1px #777;
+          padding: 0.5em 2em;
+          color: #000;
+          font-size: 0.7em;
+          margin-left: 0.5em;
+          cursor: pointer;
+          
+          &:hover {
+            background-color: #777;
+            color:#fff;
+          }
+        }
+        .rcp-btn-vw {
+          display: inline-block;
+        }
+        .rcp-btn-edt {
+          display: none;
+        }
+      }
+
+      &.actv {
+        .rcp-dsc {
+          white-space: normal ;
+          text-overflow: clip;
+          overflow: auto ;
+        }
+
+        .rcp-btn-vw {
+          display: none;
+        }
+        .rcp-btn-edt {
+          display: inline-block;
+        }
+
+      }
+    }
+  }  
+} 
+
+
+
+
+
